@@ -1,4 +1,4 @@
-<project name="OTC DevOps Challenge" default="full-build">
+<project name="Job 1 - Build on Dev Slave Instance" default="full-build">
  <!--  By default, we assume all tools to be on the $PATH  -->
 <property name="pdepend" value="pdepend"/>
 <property name="phpcpd" value="phpcpd"/>
