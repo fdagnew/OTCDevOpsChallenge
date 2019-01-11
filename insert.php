@@ -13,9 +13,9 @@ if($mysqli === false){
 }
  
 // Escape user inputs for security
-$first_name = $mysqli->real_escape_string($_REQUEST['first_name']);
-$last_name = $mysqli->real_escape_string($_REQUEST['last_name']);
-$email = $mysqli->real_escape_string($_REQUEST['email']);
+$first_name = $mysqli->real_escape_string($_REQUEST['firstName']);
+$last_name = $mysqli->real_escape_string($_REQUEST['lastName']);
+$email = $mysqli->real_escape_string($_REQUEST['emailAddress']);
  
 // attempt insert query execution
 $sql = "INSERT INTO persons (first_name, last_name, email) VALUES ('$first_name', '$last_name', '$email')";
