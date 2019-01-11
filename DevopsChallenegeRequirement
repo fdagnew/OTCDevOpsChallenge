@@ -1,0 +1,19 @@
+DevOps Challenge
+Description
+Implement a Continuous Delivery strategy for a Cloud-aware Sample web application, on this
+scenario you’re free to choose the application, what is important here is to showcase
+requirements described below. In conjunction you’ll be asked to define an architecture for auto
+testing and deploying the web application when new code changes come to the web application
+repository. Listed below you will see the general requirements and required cloud capabilities.
+General Requirements
+- A Web application that consumes a database
+- Application must be hosted in a github repository
+- Continuous Testing and Deployment for any new code changes requests in Github
+- Deployed on a Cloud Service Provider of choice (Tier 1 or 2)
+- Services can be hosted either on VMs or Containers
+Cloud Capabilities
+- Automated Deployment
+- High Availability or load balancing
+- Elasticity
+- Persistent storage
+- Basic performance/usage metric collection
