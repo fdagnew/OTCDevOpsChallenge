@@ -13,14 +13,18 @@ if($mysqli === false){
 }
  
 // Escape user inputs for security
-$first_name = $mysqli->real_escape_string($_REQUEST['firstName']);
-$last_name = $mysqli->real_escape_string($_REQUEST['lastName']);
-$email = $mysqli->real_escape_string($_REQUEST['emailAddress']);
+$first_name = $mysqli->real_escape_string($_REQUEST['first_name']);
+$last_name = $mysqli->real_escape_string($_REQUEST['last_name']);
+$email = $mysqli->real_escape_string($_REQUEST['email']);
  
 // attempt insert query execution
 $sql = "INSERT INTO persons (first_name, last_name, email) VALUES ('$first_name', '$last_name', '$email')";
+$result = $mysqli->query("Select * from persons");
+
 if($mysqli->query($sql) === true){
     echo "Records inserted successfully.";
+	echo $result
+	
 } else{
     echo "ERROR: Could not able to execute $sql. " . $mysqli->error;
 }
